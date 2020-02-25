@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Application</title>
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="./plugins/bootstrap-4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./plugins/slick-1.8.1/slick.css">
+    <link rel="stylesheet" href="./plugins/meanmenu/meanmenu.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="./fonts/ep-icon-fonts/css/ep-font.css">
+    <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="./css/settings.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="http://unpkg.com/tailwindcss/dist/tailwind.min.css"/>
+
+<style>
+body { background: #f3f8fe; }
+
+.landing-wrapper {
+    /*background-image: url(https://dl3.pushbulletusercontent.com/j3Sa5Q0QQXFxuyYk8OGVlkiWiRYpwVIz/bgLogoblobz.png);*/
+  
+    
+    /*background: #f3f8fe;*/
+}
+
+.heroBg {
+       /*background-image: url(https://images.pexels.com/photos/1300526/pexels-photo-1300526.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);*/
+   /* position: absolute;
+    z-index: 9999;
+    display: block;
+    height: 100vh;
+    max-width: 100vw;
+    margin: auto;
+    background-color: #0771ff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cg fill='%23c5d7ee' fill-opacity='0.37'%3E%3Cpath d='M0 0h80v80H0V0zm20 20v40h40V20H20zm20 35a15 15 0 1 1 0-30 15 15 0 0 1 0 30z' opacity='.5'%3E%3C/path%3E%3Cpath d='M15 15h50l-5 5H20v40l-5 5V15zm0 50h50V15L80 0v80H0l15-15zm32.07-32.07l3.54-3.54A15 15 0 0 1 29.4 50.6l3.53-3.53a10 10 0 1 0 14.14-14.14zM32.93 47.07a10 10 0 1 1 14.14-14.14L32.93 47.07z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E") !important;*/
+}
+
+
+.gotcha {
+    background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='18' viewBox='0 0 100 18'%3E%3Cpath fill='%2367d2e8' fill-opacity='0.02' d='M61.82 18c3.47-1.45 6.86-3.78 11.3-7.34C78 6.76 80.34 5.1 83.87 3.42 88.56 1.16 93.75 0 100 0v6.16C98.76 6.05 97.43 6 96 6c-9.59 0-14.23 2.23-23.13 9.34-1.28 1.03-2.39 1.9-3.4 2.66h-7.65zm-23.64 0H22.52c-1-.76-2.1-1.63-3.4-2.66C11.57 9.3 7.08 6.78 0 6.16V0c6.25 0 11.44 1.16 16.14 3.42 3.53 1.7 5.87 3.35 10.73 7.24 4.45 3.56 7.84 5.9 11.31 7.34zM61.82 0h7.66a39.57 39.57 0 0 1-7.34 4.58C57.44 6.84 52.25 8 46 8S34.56 6.84 29.86 4.58A39.57 39.57 0 0 1 22.52 0h15.66C41.65 1.44 45.21 2 50 2c4.8 0 8.35-.56 11.82-2z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+
+.testimonial-section {
+    margin-top: -64vh;
+}
+
+.meanmenu-reveal > i.icon-menu-34 { color: white !important; }
+
+#hero-callout {
+    padding-left: 15vw;
+    transform: translate3d(22vw,32vh,0);
+}
+
+.header-keypoints {
+    color: #eeeeee !important;
+}
+
+#headline-trans {
+    color: white;
+     -webkit-animation: fadeEffect 18s infinite linear;
+    animation: fadeEffect 18s infinite linear;
+    animation-direction: initial;
+
+}
+/* Go from zero to full opacity */
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@keyframes runs{
+    0%{color: red}
+    50%{color: pink}
+    100%{color: #09f;}
+}
+
+#moneyback{
+    position: absolute;
+    left: 50%;
+    transform: translate3d(-50%,-44vh,0);
+}
+
+
+#health-pic:hover{
+    transition: all ease 2s;
+      -webkit-animation: fadeEffect 2s linear;
+    animation: fadeEffect 2s  linear;
+}
+#report-pic:hover{
+    transition: all ease 2s;
+      -webkit-animation: fadeEffect 2s linear;
+    animation: fadeEffect 2s  linear;
+}
+#sync-pic:hover{
+    transition: all ease 2s;
+      -webkit-animation: fadeEffect 2s linear;
+    animation: fadeEffect 2s  linear;
+}
+</style>
+</head>
+
+<body style="">
+  
+    <div class="landing-wrapper" style="   background-image: url(https://images.pexels.com/photos/866023/pexels-photo-866023.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    background-repeat: no-repeat;background-size: contain;opacity: 0.67;filter: contrast(200%);">
+
+<div class="heroBg" style=" position: absolute;
+    z-index: 9999;
+    display: block;
+    height: 100vh;
+    max-width: 100vw;
+    margin: auto;
+    /*background-color: #0771ff;*/
+      ">
+       </div>
+            <header class="site-header" style="   background-image: url();">
+                    <div class="container">
+                        <div class="row justify-content-center align-items-center position-relative">
+                            <div class="col-sm-4 col-6 col-lg-2 col-xl-2 order-lg-1">
+                                <div class="brand">
+                                 <!--    <a href=""><img src="https://dl3.pushbulletusercontent.com/ODHjpqdT6N7cvydgOvwVQedMebA9HrRO/wooknookLogofin.png" alt="logo" /></a> -->
+                                </div>
+                            </div>
+
+                            <div class="col-sm-7 col-lg-3 col-xl-3 offset-xl-1 d-none d-sm-block order-lg-3">
+                                <div class="header-btns">
+                                    <div class="btn-1 btn-outlined" style="visibility: hidden;">
+                                        <a href="#">&nbsp;</a>
+                                    </div>
+                                    <div class="btn-2" style="padding: 5px 7px 5px 7px;text-align: center;" >
+                                        <a href="#" style="padding: 5px 7px 5px 7px;">Get a membership</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="col-sm-1 col-6 col-lg-7 col-xl-6 position-static order-lg-2">
+                                <div class="main-navigation">
+                                    <ul class="main-menu">
+                                        <li class="menu-item has-dropdown">
+                                            <a href="#features">Hgh llc.</a>
+                                                <ul class="menu-dropdown">
+                                                    <li class="single-item">
+                                                        <a href="../s01/index.html">
+                                                        <h3>doo</h3> 
+                                                        <p>See all of the items</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="single-item" style="visibility: hidden;">
+                                                        <a href="../s02/index.html">
+                                                            <h3>placeholder</h3>
+                                                            <p>Best for business</p>
+                                                        </a> 
+                                                    </li>
+                                                    <li class="single-item">
+                                                        <a href="../s03/index.html">
+                                                            <h3>Get a membership today &amp; save</h3>
+                                                        <p>Best for business</p>
+                                                    </a> 
+                                                    </li>
+                                                    <li class="single-item" style="visibility: hidden;">
+                                                        <a href="../s04/index.html">
+                                                                <h3> SaaS Subscription</h3>
+                                                            <p>Best for Business</p>
+                                                        </a> 
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        <li class="menu-item "><a href="#features">About us</a></li>
+                                
+                                        <li class="menu-item"><a href="#">gel of the year Special</a></li>
+                                
+                                        <li class="menu-item"><a href="#pricing">All Items</a></li>
+                                
+                                        <li class="menu-item"><a href="#contact">Contact</a></li>   
+                                        </ul>
+                                </div>
+                                <div class="mobile-menu"></div>
+                            </div>
+
+                        </div>
+                    </div>
+<div class="" id="" style="position:absolute;font-size: 1.4rem;color: white;padding: 2em;top: -13px">Grow Young With HGH Gel</div>
+                    <article style="display: grid;grid-template-columns: 1fr ;grid-template-rows: 1fr ">
+                        
+                     <!--    <div class="gran" id="grid2">2</div>
+                        <div class="gran" id="grid3">3</div>
+                        <div class="gran" id="grid4">4</div>
+                        <div class="gran" id="grid5">5</div> -->
+                      <img id="hero-callout"  src="https://images-na.ssl-images-amazon.com/images/I/51AMSewxmpL._SX312_BO1,204,203,200_.jpg" alt="">
+                    </article>
+                    <style>
+                        .gran {width: 100%;min-height: 32vh;width: 32vw;background-color: red}
+                    .gran:nth-child(even){background-color: #f90;}</style>
+                </header>
+
+        <main style="width: 100%;position: block;margin-top: 44vh;">
+            <div class="bghero" style="background-color: indigo;height: 136em;width: 100%;max-width: 100vw;position: relative;display: block;">
+
+              <div class="testimonial-slider-wrapper">h
+
+               <div class="row justify-content-center position-relative">
+                        <div class="col-lg-10 ">
+                            <div class="testimonial" style="margin: auto;text-align: center;">
+                                <!-- <img style="max-width: 50vw" src="https://PLACEHOLD.IT/200X200.JPG" alt=""> --> <!-- Features -->
+    <section class="container mx-auto px-6 p-10">
+      <h2 class="text-4xl font-bold text-center text-gray-800 mb-8" id="headline-trans" >
+        Grow Young With HGH
+      </h2>
+      <div class="flex items-center flex-wrap mb-20">
+        <div class="w-full md:w-1/2">
+          <h4 class="text-3xl text-gray-800 font-bold mb-3 header-keypoints">
+            Lose Fat, Gain Muscle
+          </h4>
+          <p class="text-gray-600 mb-8">
+            Our Smart Health Patent goes above and beyond with muscle repair and increase bone mass. A road to quicker recovery and a life you deserve. Start today.
+          </p>
+        </div>
+        <div class="w-full md:w-1/2">
+          <img
+          id='health-pic'
+            src="https://www.dropbox.com/s/mimcvn6zxtoruis/health.svg?raw=1"
+            alt="Monitoring"
+          />
+        </div>
+      </div>
+      <div class="flex items-center flex-wrap mb-20">
+        <div class="w-full md:w-1/2">
+          <img
+            id='report-pic'
+            src="https://www.dropbox.com/s/hllo2ueo8zgi2tt/report.svg?raw=1"
+            alt="Reporting"
+          />
+        </div>
+        <div class="w-full md:w-1/2 pl-10">
+          <h4 class="text-3xl text-gray-800 font-bold mb-3 header-keypoints">
+            Increased Sexual Performance
+          </h4>
+          <p class="text-gray-600 mb-8">
+            Our testimonials show a consistent review of increased sexual stamina and performance.
+            Increased energy levels aid in consistent performance, confidence and faster recovery times.
+            
+          </p>
+        </div>
+      </div>
+      <div class="flex items-center flex-wrap mb-20">
+        <div class="w-full md:w-1/2">
+          <h4 class="text-3xl text-gray-800 font-bold mb-3 header-keypoints" >
+            Increase Energy Levels
+          </h4>
+          <p class="text-gray-600 mb-8">
+            See a noticable difference in your energy levels throughout the day. 
+            Take a look at your watch in the mid-afternoon and realise you are not tired at all. Wow, you are ready to accomplish goals and take charge of your best life. Start Today
+          </p>
+        </div>
+        <div class="w-full md:w-1/2">
+          <img
+            id='sync-pic'
+            src="https://www.dropbox.com/s/v0x0ywlvgmw04z6/sync.svg?raw=1"
+            alt="Syncing"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+ <!--    <section class="bg-gray-100">
+      <div class="container mx-auto px-6 py-20">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
+          Testimonials
+        </h2>
+       
+        </div>
+      </div>
+    </section> -->
+    <!--Call to Action-->
+
+    <!--Footer-->
+  
+ 
+
+
+           <!--  <div class="gotcha" style="background-color: rgba(255,255,255,0.67);width:50vw;height: 75vh;position: relative;transform: translate3d(75%,-175vh,0);background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-image.realsimple.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Frs_medium_image%2Fpublic%2Fimage%2Fimages%2Fholidays-entertaining%2Fweddings%2F0412%2Fred-ranunculus_300.jpg%3Fitok%3DojVbkPoo&f=1&nofb=1);background-repeat: no-repeat;background-size: contain;">who</div> -->
+        </main>
+<section style="margin-top: 10vh;padding-top:0;padding-bottom: 0;">
+    <div class="bg-gray-200 min-h-screen">
+  <div class="max-w-6xl mx-auto px-8 py-16">
+    <div class="relative">
+      <div class="relative lg:flex rounded-lg shadow-2xl overflow-hidden">
+        <div class="h-56 lg:h-auto lg:w-5/12 relative flex items-center justify-center">
+          <img id="pop-img" class="absolute h-full w-full object-cover" src="https://stripe.com/img/v3/payments/overview/photos/slack.jpg" alt="" />
+          <div class="absolute inset-0 bg-indigo-900 opacity-75"></div>
+         
+        </div>
+        <div class="relative lg:w-7/12 bg-white">
+          <svg class="absolute h-full text-white w-24 -ml-12" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="50,0 100,0 50,100 0,100"/>
+        </svg>
+          <div class="relative py-12 lg:py-24 px-8 lg:px-16 text-gray-700 leading-relaxed">
+            <p id="properly">
+              As <strong class="text-gray-900 font-medium">Slack</strong> grows rapidly, using Stripe helps them scale payments easily &mdash; supporting everything from getting paid by users around the world to enabling ACH payments for corporate customers.
+            </p>
+            <p class="mt-6">
+              <a href="#" class="font-medium text-indigo-600 hover:text-indigo-900">Learn more about our users &rarr;</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <script>
+        const broc = document.getElementById('properly');
+      
+        const popImg = document.getElementById('pop-img');
+        const rightTestimonial = document.getElementById('right-testimonial');
+         const leftTestimonial = document.getElementById('left-testimonial');
+let pops ={
+    'texts':['<p id="properly">1<strong class="text-gray-900 font-medium">Slack</strong> grows rapidly, using Stripe helps them scale payments easily &mdash; supporting everything from getting paid by users around the world to enabling ACH payments for corporate customers.</p>','<p id="properly">2<strong class="text-gray-900 font-medium">Slack</strong> grows rapidly, using Stripe helps them scale payments easily &mdash; supporting everything from getting paid by users around the world to enabling ACH payments for corporate customers.</p>','<p id="properly">3<strong class="text-gray-900 font-medium">Slack</strong> grows rapidly, using Stripe helps them scale payments easily &mdash; supporting everything from getting paid by users around the world to enabling ACH payments for corporate customers.</p>'],
+
+    'pics':['https://images.unsplash.com/photo-1567234353067-1ef8d9033759?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60','https://images.unsplash.com/photo-1571019652329-224804d6d663?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60']
+    }
+
+      let testimonialSlider = () =>{ broc.innerHTML =`${pops.texts[1]}`;popImg.src=`${pops.pics[0]}`};
+      let testimonialSliderLeft = () => { broc.innerHTML = `${pops.texts[0]}`;popImg.src=`${pops.pics[1]}`};
+     // rightTestimonial.addEventListener('click',testimonialSlider);
+
+  </script>
+      <div class="absolute inset-y-0 left-0 lg:flex lg:items-center">
+        <button class="mt-24 lg:mt-0 -ml-6 h-12 w-12 rounded-full bg-white p-3 shadow-lg" id="left-testimonial" onclick="testimonialSliderLeft()">
+        <svg class="h-full w-full text-indigo-900" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M5.41 11H21a1 1 0 0 1 0 2H5.41l5.3 5.3a1 1 0 0 1-1.42 1.4l-7-7a1 1 0 0 1 0-1.4l7-7a1 1 0 0 1 1.42 1.4L5.4 11z"/>
+        </svg>
+      </button>
+      </div>
+      <div class="absolute inset-y-0 right-0 lg:flex lg:items-center" >
+        <button class="mt-24 lg:mt-0 -mr-6 h-12 w-12 rounded-full bg-white p-3 shadow-lg" id="right-testimonial" onclick="testimonialSlider()">
+        <svg class="h-full w-full text-indigo-900" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M18.59 13H3a1 1 0 0 1 0-2h15.59l-5.3-5.3a1 1 0 1 1 1.42-1.4l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.42-1.4l5.3-5.3z"/>
+        </svg>
+      </button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+        <!-- Cta Section -->
+       <!--  <section class="cta-section">
+            <div class="container">
+              
+            </div>
+        </section> -->
+
+        <section class="footer-section" style="margin-top: 5vh">
+            <div class="container">
+               
+                        <div class="footer-logo">
+                            <img style="margin: auto;text-align: center;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fb2insightuniversity.com%2Fimages%2Fmoney-back-guarantee-icon.png&f=1&nofb=1" alt="" id="moneyback">
+<style type="text/css">
+    #mc_embed_signup{margin:1.5em 3em;background:rgba(0,0,0,0.1); clear:left; font:14px Helvetica,Arial,sans-serif;padding: 2em 3em;border-radius: 16px; }
+     #mc_embed_signup form {
+        line-height: 1.5;
+        padding: 10px 14px;
+     }
+     #mc_embed_signup form input{
+        border-radius: 8px;
+        padding: 1px 2px;
+     }
+
+    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<!-- <div id="mc_embed_signup" style="width: 100%;max-width: 100vw;min-width: 50vw;">
+<form action="https://ourhghworks.us4.list-manage.com/subscribe/post?u=17c9e5af3b3c3d2fdd5377f13&amp;id=54aa14a4e5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="max-w-lg m-4 p-4  rounded shadow-xl validate" target="_blank" style="background-color: rgba(0,0,0,0.32);height: 67vh;" novalidate>
+   <div class="min-h-screen p-4  leading-loose" style="background-color: transparent;">
+  
+    <p class="text-black-800 font-medium">Customer information</p>
+    <div class="">
+      <label class="block text-sm text-black-600" for="cus_name">Name</label>
+      <input class="w-full px-2 py-2 text-black-700 bg-black-200 rounded" id="cus_name" name="cus_name" type="text" required="" placeholder="Your Name" aria-label="Name">
+    </div>
+    <div class="mt-2">
+      <label class="block text-sm text-black-600" for="cus_email">Email</label>
+      <input class="w-full px-2 py-2 text-black-700 bg-black-200 rounded" id="cus_email" name="cus_email" type="text" required="" placeholder="Your Email" aria-label="Email">
+    </div>
+   
+    <div class="inline-block mt-2 -mx-1 pl-1 w-1/2">
+      <label class="hidden block text-sm text-black-600" for="cus_email">Zip</label>
+      <input class="w-full px-2 py-2 text-black-700 bg-black-200 rounded" id="cus_email"  name="cus_email" type="text" required="" placeholder="Zip" aria-label="Email">
+    </div>
+   
+    <div class="mt-4">
+      <button style="border: 3px solid black;background-color: navy" class="px-4 py-1 text-white font-light tracking-wider bg-black-900 rounded" type="submit">Submit</button>
+    </div>
+  </div>
+ -->
+<!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> --><!-- Begin Mailchimp Signup Form -->
+<div id="mc_embed_signup" style="transform: scale(2);text-align: center;margin: auto;">
+<form action="https://ourhghworks.us4.list-manage.com/subscribe/post?u=17c9e5af3b3c3d2fdd5377f13&amp;id=54aa14a4e5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="max-w-lg m-4 p-4  rounded shadow-xl validate" target="_blank" novalidate>
+   
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="background-color: navy"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><!-- Begin Mailchimp Signup Form -->
+<link href="http://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+
+
+<!--End mc_embed_signup-->
+                            <br><!-- Begin Mailchimp Signup Form -->
+
+
+                       
+
+                    <div class="col-lg-6 col-md-6  offset-lg-1" style="margin-top: 12vh;">
+                        <ul class="nav footer-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">About us </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Gel of the year</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Al Items</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Social</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-lg-2 col-md-3 offset-lg-1">
+                        <ul class="footer-social-list">
+                            <li>
+                                <a href="">
+                                    <i class="icon icon-logo-fb-simple"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="icon icon-logo-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="icon icon-google"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="copyright">
+                    <p>©2019 All right reserved. </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+    const book = document.getElementById('hero-callout');
+    function moveIt () {
+       book.style.transition = 'all ease 8000';
+       book.style.backgroundColor = 'navy';
+    }
+function food () {
+   
+    setTimeout(moveIt, 3000) 
+}
+food();
+    
+</script>
+
+    <!-- Vendor JS-->
+    <script src="./plugins/jquery/jquery.min.js"></script>
+    <script src="./plugins/jquery/jquery-migrate.min.js"></script>
+    <script src="./plugins/bootstrap-4.3.1/js/bootstrap.bundle.js"></script>
+    <!-- Plugins JS -->
+    <script src="./plugins/slick-1.8.1/slick.min.js"></script>
+    <script src="./plugins/meanmenu/jquery.meanmenu.js"></script>
+    <script src="./js/active.js"></script>
+</body>
+
+</html>
